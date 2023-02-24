@@ -1,15 +1,5 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[9]:
-
-
 import pandas as pd
 import numpy as np
-
-
-# In[11]:
-
 
 Loan_amount=int(input('Please enter the loan amount: '))# enter loan amount
 Tenor=int(input("Please enter the tenor: ")) # enter the tenor of the loan
@@ -31,10 +21,3 @@ for i in range(Tenor):
 print("Payment\tBalance\tPrincipal\tInterest\tPayment")
 for i,(month,balance,principal_paid,interest,monthly_payment)in enumerate (repayment_schedule):
     print(f"{month}\t{balance:.2f}\t{principal_paid:.2f}\t{interest:.2f}\t{monthly_payment:.2f}")   
-
-
-# In[ ]:
-
-
-
-
